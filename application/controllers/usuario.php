@@ -22,7 +22,7 @@ class Usuario extends CI_Controller {
 		//dejo el email por fuera, ya que puede poseer caracteres especiales
 		$usuario = array('nombre' => $nombre, 'apellido' => $apellido,'contrasena' => $contrasena, 'genero' => $genero, 'foto' => $foto, 'direccion' => $direccion);
 		 	
-		 	$r=$this->User_model->crearUsuario($usuario);
+		 	$r=$this->User_model->save($usuario);
 		 	if(sizeof($r)>0){
 		 		redirect(base_url());
 		 	}
