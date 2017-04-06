@@ -4,9 +4,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Usuario extends CI_Controller {
 
 	
-	public function index($instrumento="")
+	public function index()
 	{
-		$this->load->view('users/registro.php');
+		$instrumento= $this->cargarInstrumentos();
+		var_dump($instrumento);
+		$this->load->view('users/registro.php', $instrumento);
 
 	}
 	public function registrar()
@@ -31,8 +33,8 @@ class Usuario extends CI_Controller {
 
 	public function cargarInstrumentos()
 	{
-	 $instrumento= $this->user_model->cargarInstrumento();
-	 $this->index($instrumento);
+	 return $this->User_model->instrumentos();
+	 
 	}
 	/*
 	FUNCION PARA REALIZAR EL LOGIN

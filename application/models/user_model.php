@@ -7,6 +7,12 @@ class User_model extends CI_Model {
     $r = $this->db->insert('musico', $user);
     return $r;
   }
+   function instrumentos()
+  {
+    $query = $this->db->get('instrumento');
+
+    return $query->result_object();
+  }
 
 /*
 	FUNCION PARA EL LOGIN
