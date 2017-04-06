@@ -7,9 +7,13 @@ class Usuario extends CI_Controller {
 	public function index()
 	{
 		$instrumento= $this->cargarInstrumentos();
-		var_dump($instrumento);
+		
 		$this->load->view('users/registro.php', $instrumento);
 
+	}
+	public function login()
+	{
+	$this->load->view('users/login');	
 	}
 	public function registrar()
 	{
@@ -26,7 +30,7 @@ class Usuario extends CI_Controller {
 		 	
 		 	$r=$this->User_model->save($usuario);
 		 	if(sizeof($r)>0){
-		 		echo "registrado";
+		 		redirect('login');
 		 	}
 		
 	}
@@ -36,24 +40,23 @@ class Usuario extends CI_Controller {
 	 return $this->User_model->instrumentos();
 	 
 	}
-	/*
-	FUNCION PARA REALIZAR EL LOGIN
+	
 	public function autenticarse()
 	{
 
 		$user = $this->input->post('nombre');
 		$pass = $this->input->post('contrasena');
 
-		$r = $this->user_model->autenticarse($user, $pass);
+		$r = $this->User_model->autenticarse($user, $pass);
 		if (sizeof($r) > 0) {
-			$name = $r[0]->first_name;
-			echo "Hello $name";
+			
+			echo "Hello";
 		}else
 		{
 			echo "Not valid user";
 		}
 	}
-	*/
+	
 	
 }
 

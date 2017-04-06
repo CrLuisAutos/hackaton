@@ -72,8 +72,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>Por favor ingrese sus datos para ingresar</p>
 		<div class="error"> </div>
     <form class="" action="usuario/autenticarse" method="post">
-      Nombre: <input type="text" name="nombre" value="">
-      Contraseña: <input type="password" name="contrasena" value="">
+      Nombre: <input type="text" name="nombre" value="" required>
+      Contraseña: <input type="password" name="contrasena" value="" required>
       <input type="submit" value="Login">
     </form>
 	</div>
