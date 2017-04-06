@@ -6,7 +6,7 @@ class Usuario extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('index');
+		$this->load->view('users/login.php');
 
 	}
 	public function registrar()
@@ -15,7 +15,7 @@ class Usuario extends CI_Controller {
 		$contrasena= $this->input->post('contrasena');
 		$nombre= $this->input->post('nombre');
 		$apellido= $this->input->post('apellido');
-		$instrumento= $this->input->post('instrumeto');
+		$instrumento= $this->input->post('instrumento');
 		$genero= $this->input->post('genero');
 		$foto= $this->input->post('foto');
 		$direccion= $this->input->post('direccion');
