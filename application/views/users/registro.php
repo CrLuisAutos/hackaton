@@ -80,7 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   					<option value="seleccion">Seleccione</option>
 					</select><br>
 	  Genero: <input type="text" name="genero" value=""><br>
-	  Foto:   <input name="imagen" type="file" /><br>
+	  Foto:   <input name="foto" type="file" /><br>
       <input type="submit" value="Login">
     </form>
 	</div>
