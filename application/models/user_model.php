@@ -1,8 +1,8 @@
 <?php
 class User_model extends CI_Model {
 
-  function authenticate($user, $pass) {
-    $query = $this->db->get_where('users', array('username' => $user, 'password' => $pass));
+  function authenticate($user, $contrasena) {
+    $query = $this->db->get_where('users', array('username' => $user, 'password' => $contrasena));
 
 	  return $query->result_object();
   }
