@@ -72,15 +72,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>Por favor ingrese los siguientes datos para registrarse</p>
 		<div class="error"> </div>
     <form action="usuario/registrar" method="post">
-      Nombre: <input type="text" name="nombre" value=""><br>
-      Apellido: <input type="text" name="apellido" value=""><br>
-      Contraseña: <input type="password" name="contrasena" value=""><br>
-      Dirección: <input type="password" name="direccion" value=""><br>
-      Instrumento: <select name = "instrumento">
+      Nombre: <input type="text" name="nombre" value="" required><br>
+      Apellido: <input type="text" name="apellido" value="" required><br>
+      Contraseña: <input type="password" name="contrasena" value="" required><br>
+      Dirección: <input type="password" name="direccion" value="" required><br>
+      Instrumento: <select name = "instrumento" required>
   					<option value="seleccion">Seleccione</option>
 					</select><br>
-	  Genero: <input type="text" name="genero" value=""><br>
-	  Foto:   <input name="foto" type="file" /><br>
+	  Genero: <input type="text" name="genero" value="" required><br>
+	  Foto:   <input name="foto" type="file" required/><br>
       <input type="submit" value="Login">
     </form>
 	</div>
