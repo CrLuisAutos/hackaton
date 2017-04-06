@@ -9,6 +9,12 @@ class User_model extends CI_Model {
     return $r;
   }
 
- 
+/*
+	FUNCION PARA EL LOGIN
+   function autenticarse($user, $pass) {
+    $query = $this->db->get_where('musico', array('nombre' => $user, 'contrasena' => $pass));
 
+	  return $query->result_object();
+  }
+*/
 }
