@@ -22,4 +22,15 @@ class User_model extends CI_Model {
 	  return $query->result_object();
   }
 */
+
+
+ 
+  function instrumentos() {
+    $query = $this->db->get('instrumentos');
+    return $query->result_array();
+  }
+
+
+
+
 }
