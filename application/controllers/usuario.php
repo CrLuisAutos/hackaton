@@ -24,7 +24,7 @@ class Usuario extends CI_Controller {
 		 	
 		 	$r=$this->User_model->save($usuario);
 		 	if(sizeof($r)>0){
-		 		redirect(base_url());
+		 		echo "registrado";
 		 	}
 		
 	}
