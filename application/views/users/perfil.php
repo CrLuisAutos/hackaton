@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="error"> </div>
     
       Foto: <img src= "" alt="Foto de Perfil:">
-      Nombre: <input type="text" name="nombre" value="" disabled>
+      Nombre: <input type="text" name="nombre:" value="" disabled>
       Apellido: <input type="text" name="apellido" value="" disabled>
       Dirección: <input type="text" name="direccion" value="" disabled>
       Instrumento: <input type="text" name="instrumento" value="" disabled>
