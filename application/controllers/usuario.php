@@ -6,7 +6,7 @@ class Usuario extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('users/login.php');
+		$this->load->view('users/registro.php');
 
 	}
 	public function registrar()
