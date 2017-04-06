@@ -9,6 +9,25 @@ class Usuario extends CI_Controller {
 		$this->load->view('index');
 
 	}
+	public function registrar()
+	{
+
+		$contrasena= $this->input->post('contrasena');
+		$nombre= $this->input->post('nombre');
+		$apellido= $this->input->post('apellido');
+		$instrumento= $this->input->post('instrumeto');
+		$genero= $this->input->post('genero');
+		$foto= $this->input->post('foto');
+		$direccion= $this->input->post('direccion');
+		//dejo el email por fuera, ya que puede poseer caracteres especiales
+		$usuario = array('nombre' => $nombre, 'apellido' => $apellido,'contrasena' => $contrasena, 'genero' => $genero, 'foto' => $foto, 'direccion' => $direccion);
+		 	
+		 	$r=$this->User_model->crearUsuario($usuario);
+		 	if(sizeof($r)>0){
+		 		redirect(base_url());
+		 	}
+		
+	}
 	
 }
 
