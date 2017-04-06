@@ -8,9 +8,17 @@ class User_model extends CI_Model {
     return $r;
   }
    function instrumentos() {
-    $query = $this->db->get('instrumentos');
+    $query = $this->db->get('instrumento');
     return $query->result_array();
   }
+
+
+    function authenticate($x) {
+    $query = $this->db->get_where('musico', array('nombre' => $x));
+
+    return $query->result_array();
+  }
+
 
 /*
 	FUNCION PARA EL LOGIN
