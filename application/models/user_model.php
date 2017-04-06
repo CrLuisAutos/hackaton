@@ -7,6 +7,8 @@ class User_model extends CI_Model {
     $r = $this->db->insert('musico', $user);
     return $r;
   }
+
+
    function instrumentos() {
     $query = $this->db->select('nombre');
     $query = $this->db->from('instrumento');
@@ -16,7 +18,10 @@ class User_model extends CI_Model {
 
 
     function authenticate($x) {
-    $query = $this->db->get_where('musico', array('nombre' => $x));
+    $query = $this->db->select('musico');
+
+
+  $query = $this->db->like('nombre', $x);
 
     return $query->result_array();
   }
