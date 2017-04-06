@@ -8,7 +8,9 @@ class User_model extends CI_Model {
     return $r;
   }
    function instrumentos() {
-    $query = $this->db->get('instrumento');
+    $query = $this->db->select('nombre');
+    $query = $this->db->from('instrumento');
+    $query = $this->db->get();
     return $query->result_array();
   }
 
