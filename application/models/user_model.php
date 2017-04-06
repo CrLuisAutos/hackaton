@@ -7,11 +7,9 @@ class User_model extends CI_Model {
     $r = $this->db->insert('musico', $user);
     return $r;
   }
-   function instrumentos()
-  {
-    $query = $this->db->get('instrumento');
-
-    return $query->result_object();
+   function instrumentos() {
+    $query = $this->db->get('instrumentos');
+    return $query->result_array();
   }
 
 /*
@@ -25,10 +23,7 @@ class User_model extends CI_Model {
 
 
  
-  function instrumentos() {
-    $query = $this->db->get('instrumentos');
-    return $query->result_array();
-  }
+ 
 
 
 
