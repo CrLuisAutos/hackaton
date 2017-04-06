@@ -75,7 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       Nombre: <input type="text" name="nombre" value=""><br>
       Apellido: <input type="text" name="apellido" value=""><br>
       Contraseña: <input type="password" name="contrasena" value=""><br>
-      Dirección: <input type="password" name="contrasena" value=""><br>
+      Dirección: <input type="password" name="direccion" value=""><br>
       Instrumento: <select name = "instrumento">
   					<option value="seleccion">Seleccione</option>
 					</select><br>
