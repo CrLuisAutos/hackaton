@@ -3,7 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="utf-8">
 	<title>Welcome to RidesCR</title>
 	<style type="text/css">
@@ -68,25 +67,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Registro</h1>
+	<h1>Perfil</h1>
 	<div id="body">
-		<p>Por favor ingrese los siguientes datos para registrarse</p>
+		<p>Principales datos de este musico</p>
 		<div class="error"> </div>
-    <form class="" action="usuario/registrar" method="post">
-      Nombre: <input type="text" name="nombre" value="">
-      Apellido: <input type="text" name="apellido" value="">
-      Contraseña: <input type="password" name="contrasena" value="">
-      Dirección: <input type="password" name="contrasena" value="">
-      Instrumento: <select name = "instrumento">
-      
-  					<option> $instrumento->nombre</option>
-  					
-					</select>
-	  Genero: <input type="text" name="genero" value="">
-	  Foto:   <input name="imagen" type="file" />
-
-      <input type="submit" value="Registrarse">
-    </form>
+    
+      Foto: <img src= "" alt="Foto de Perfil">
+      Nombre: <input type="text" name="nombre" value="" disabled>
+      Apellido: <input type="text" name="apellido" value="" disabled>
+      Dirección: <input type="text" name="direccion" value="" disabled>
+      Instrumento: <input type="text" name="instrumento" value="" disabled>
+      Genero: <input type="text" name="genero" value="" disabled>
+    
 	</div>
 </div>
 
