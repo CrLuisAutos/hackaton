@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>Principales datos de este musico</p>
 		<div class="error"> </div>
     
-      Foto: <img src= "" alt="Foto de Perfil">
+      Foto: <img src= "" alt="Foto de Perfil:">
       Nombre: <input type="text" name="nombre" value="" disabled>
       Apellido: <input type="text" name="apellido" value="" disabled>
       Dirección: <input type="text" name="direccion" value="" disabled>
